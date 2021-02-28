@@ -1,0 +1,12 @@
+<div class="add-text">
+  <textarea
+    class="scrollable"
+    placeholder="Write a comment ....."
+    [(ngModel)]="comment"></textarea>
+  <button class="submit"
+          [disabled]="comment?.length <= 0"
+          (click)="commentMiddleware()">
+          <i class="fas fa-location-arrow" [class.enabled]="comment?.length > 0"></i>
+   </button>
+ 
+</div>

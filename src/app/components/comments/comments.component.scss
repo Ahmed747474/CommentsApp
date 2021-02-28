@@ -1,0 +1,10 @@
+@import '../../../styles.scss';
+
+.scrollable {
+  @include scrollable();
+}
+ 
+.comments-wrapper {
+  height: 500px;
+  padding-bottom: 150px;
+}

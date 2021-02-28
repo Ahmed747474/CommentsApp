@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+
+:root {
+
+  /* Shadows */
+  --background-tertiary-shadow: 0 1px 3px 0 rgba(92, 125, 153, 0.5);
+}
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+html {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  // font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: white;
+  text-align: left;
+  background-color: white;
+}
+
+@mixin scrollable {
+  height: 100%;
+  overflow: auto;
+ 
+  &::-webkit-scrollbar {
+      width: 0.4vw;
+  }
+
+  &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: darkgray;
+      border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: white;
+      outline: 0px solid white;
+  }
+}

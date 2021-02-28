@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .page {
+    display: grid;
+    grid-template-rows: min-content min-content min-content auto min-content 1fr;
+     margin: 2vh auto;
+    font-size: 1em;
+    overflow: hidden;
+    background-color:#d3e8ff;
+    border-radius: 5px;
+    box-shadow: 1px 11px 23px -23px rgb(0 24 44);;
+  }
+  
+  .comments {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  loader {
+    margin: auto;
+  }
+  

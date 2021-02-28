@@ -1,0 +1,130 @@
+.comment-container {
+    margin-bottom: 0.1vw;
+    padding: 1vw;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    animation: bounce-in 0.5s forwards;
+    animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+
+    .image {
+        display: flex;
+        margin: 5px 0.5vw auto 0;
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        border: 2px solid #222222;
+        border-radius: 100%;
+        color: #222222;
+        .user-first-latter {
+            margin: auto;
+        }
+    }
+
+    .comment {
+        display: flex;
+        flex-direction: column;
+
+        .row-1 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .left {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .comment {
+        background-color: lighten($color: #e2f0fe, $amount: 3%);
+        border-radius: 5px;
+        flex-grow: 1;
+        padding: 5px 1vmin;
+        color: #222222;
+
+        .title {
+            margin-right: 15px;
+        }
+ 
+        .reply {
+            background-color: lighten($color: #d2d2d2, $amount: 5%);
+            border-radius: 5px;
+            width: fit-content;
+            padding: 0 10px;
+            font-size: 0.9em;
+            margin: 2px 0;
+
+            .reply-label {
+                color: #222222;
+                font-size: 0.8em;
+                padding-right: 7px;
+            }
+
+            .reply-title {
+                color: #222222;
+                padding-right: 7px;
+            }
+
+            .reply-user {
+                color: #222222;
+            }
+        }
+
+        .text {
+            grid-column: 1 / span 3;
+            font-size: 0.8em;
+        }
+
+        .time {
+            color: #222222;
+            font-size: 0.8em;
+        }
+    }
+}
+
+.shift {
+    margin-left: 50px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    button {
+        background-color: transparent;
+        font-size: 1.2em;
+        color: #222222;
+        border: none;
+
+        &:hover {
+            color: #222222;
+        }
+        &:hover {
+            .delete {
+                color: var(--red);
+            }
+        }
+    }
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(1, 1) translateX(-100%);
+    }
+    30% {
+        transform: scale(1.1, 0.9) translateX(0);
+    }
+    40% {
+        transform: scale(0.9, 1.1) translateX(-10px);
+    }
+    60% {
+        transform: scale(1.05, 0.95) translateX(0);
+    }
+    100% {
+        transform: scale(1, 1) translateX(0);
+    }
+}

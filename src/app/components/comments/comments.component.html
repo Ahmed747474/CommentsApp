@@ -1,0 +1,5 @@
+<div class="page scrollable comments-wrapper">
+  <app-comments-details *ngFor="let comment of comments;trackBy:trackByFn"
+    [comment]="comment">
+  </app-comments-details>
+</div>
