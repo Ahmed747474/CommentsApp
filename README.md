@@ -1,5 +1,5 @@
 # CommentsApp
-![](Untitled Project.gif)
+! [] (Untitled-Project.gif)
   
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
 
