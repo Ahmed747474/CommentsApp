@@ -1,5 +1,5 @@
 # CommentsApp
-! [] (https://github.com/Ahmed747474/CommentsApp/blob/master/Untitled%20Project.gif)
+! [Project Gif] (https://github.com/Ahmed747474/CommentsApp/blob/master/Untitled%20Project.gif)
   
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
 
